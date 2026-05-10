@@ -1,0 +1,10 @@
+# Runtime: Local Machine / Windows, Ray 2.55.1, 20 CPUs
+# Data: Task1 download.py -> download_data/
+# Pipeline: Task1(OSS) -> Task2(mrjob) -> Task3(Ray remote tasks + merge)
+# Elapsed: 0.44s
+
+search-service,high slow request rate; repeated timeout errors
+order-service,repeated timeout errors
+payment-service,high slow request rate; high server error rate; repeated timeout errors
+notification-service,repeated timeout errors
+auth-service,repeated timeout errors
