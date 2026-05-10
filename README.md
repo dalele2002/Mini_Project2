@@ -14,7 +14,7 @@ through a pipeline of:
 
 - Python 3.10+
 - Windows / Local execution
-- Dependencies: `mrjob`, `ray`, `oss2`, `python-dotenv`
+- Dependencies: `mrjob`, `ray`, `oss2`
 
 ## Installation
 
