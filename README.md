@@ -84,7 +84,7 @@ However, to ensure the project can be fully reproduced by instructors or peer re
 > **Note:** The following credentials are provided solely to enable instructors and peer reviewers to reproduce the full pipeline.
 
 **Access Key ID** 
-- $$\color{red}{\text{To prevent the leakage of Alibaba Cloud OSS ID and password, for security reasons, we have provided the password and ID in the last question of Mini-lab Project 2 submitted by the coordinator, along with the GitHub repository address. After submission, only the professor can view it.}}$$
+- To prevent the leakage of Alibaba Cloud OSS ID and password, for security reasons, we have provided the password and ID in the last question of Mini-lab Project 2 submitted by the coordinator, along with the GitHub repository address. After submission, only the professor can view it.
 
 **Access Key Secret** 
 - To prevent the leakage of Alibaba Cloud OSS ID and password, for security reasons, we have provided the password and ID in the last question of Mini-lab Project 2 submitted by the coordinator, along with the GitHub repository address. After submission, only the professor can view it.
