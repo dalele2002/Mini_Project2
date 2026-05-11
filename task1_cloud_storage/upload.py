@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-# Author: dalele2002 dagujie@126.com
-# Date: 2026-05-07 22:38:11
-# FilePath: \Comp3041J-MiniProject2\task1_cloud_storage\upload.py
-# Description: Task 1 Cloud Object Storage Upload - Alibaba Cloud OSS
-
 import os
 import sys
 import tempfile
@@ -14,8 +8,17 @@ if sys.platform == 'win32':
     import io
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
-OSS_ACCESS_KEY_ID = os.environ.get("OSS_ACCESS_KEY_ID")
-OSS_ACCESS_KEY_SECRET = os.environ.get("OSS_ACCESS_KEY_SECRET")
+# 凭证改为运行时手动输入（增强安全性，不硬编码、不存文件、不依赖系统环境变量）
+_credentials = {}
+
+def get_credentials():
+    """Prompt for OSS credentials once per run."""
+    global _credentials
+    if not _credentials:
+        _credentials['id'] = input("Enter OSS Access Key ID: ").strip()
+        _credentials['secret'] = input("Enter OSS Access Key Secret: ").strip()
+    return _credentials['id'], _credentials['secret']
+
 OSS_ENDPOINT = "oss-cn-beijing.aliyuncs.com"
 OSS_BUCKET = "comp3041j-minigroupproject2-2026"
 
@@ -33,9 +36,10 @@ RUNTIME_ENV = {
 
 
 def create_oss_bucket():
-    if not OSS_ACCESS_KEY_ID or not OSS_ACCESS_KEY_SECRET:
-        raise ValueError("Environment variables not set")
-    return oss2.Bucket(oss2.Auth(OSS_ACCESS_KEY_ID, OSS_ACCESS_KEY_SECRET), OSS_ENDPOINT, OSS_BUCKET)
+    access_id, access_secret = get_credentials()
+    if not access_id or not access_secret:
+        raise ValueError("Credentials not provided")
+    return oss2.Bucket(oss2.Auth(access_id, access_secret), OSS_ENDPOINT, OSS_BUCKET)
 
 
 def get_samples(path, n=2):
