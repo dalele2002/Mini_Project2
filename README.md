@@ -83,12 +83,15 @@ However, to ensure the project can be fully reproduced by instructors or peer re
 ### OSS Credentials (For Academic Submission Only)
 > **Note:** The following credentials are provided solely to enable instructors and peer reviewers to reproduce the full pipeline.
 
-**Access Key ID** `Please refer to the README.md file in the compressed package version of the submitted website for details.`
+**Access Key ID** 
+- $$\color{red}{\text{To prevent the leakage of Alibaba Cloud OSS ID and password, for security reasons, we have provided the password and ID in the last question of Mini-lab Project 2 submitted by the coordinator, along with the GitHub repository address. After submission, only the professor can view it.}}$$
 
-**Access Key Secret** `Please refer to the README.md file in the compressed package version of the submitted website for details.`
-
-**Bucket Name** `Please refer to the README.md file in the compressed package version of the submitted website for details.`
-
+**Access Key Secret** 
+- To prevent the leakage of Alibaba Cloud OSS ID and password, for security reasons, we have provided the password and ID in the last question of Mini-lab Project 2 submitted by the coordinator, along with the GitHub repository address. After submission, only the professor can view it.
+  
+**Bucket Name**
+  - To prevent the leakage of Alibaba Cloud OSS ID and password, for security reasons, we have provided the password and ID in the last question of Mini-lab Project 2 submitted by the coordinator, along with the GitHub repository address. After submission, only the professor can view it.
+    
 ### Step 1: Task 1 — Cloud Object Storage (Member A)
 
 ```bash
