@@ -1,3 +1,4 @@
+MemeberA你把ReADME更新一下吧，还有run_all.bat,还有具体的requirements.txt
 # Mini-Project 2: Cloud Service Log Analytics (From MapReduce to Ray)
 
 Module: COMP3041J Cloud Computing
